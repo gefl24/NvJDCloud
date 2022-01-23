@@ -324,6 +324,12 @@ nohup dotnet NETJDC.dll --urls=http://*:5701 1>"$(pwd)"/log 2>&1 & #ARM64
 ```
 然后访问 http://你的IP:5701 即可
 
+
+>_注意：如果安装后访问网页长时间加载不出来、或弹出下载文件、或点击获取验证码后无法收到，可以执行以下命令安装 Gdip 后重启一下再次访问试试
+```
+apt install libgdiplus -y && ln -s /usr/lib/libgdiplus.so /usr/lib/gdiplus.dll
+```
+
 ## ♻ Arm版更新方式
 
 查询占用5701的端口进程  如果你的nvjdc是5701就查询 5701
@@ -353,7 +359,7 @@ nohup dotnet NETJDC.dll --urls=http://*:5701 1>"$(pwd)"/log 2>&1 & #ARM64
 
 ## 🎉 鸣谢
 
-- ***原作 ~~[Nolanhzy](https://github.com/NolanHzy/nvjdcdocker.git)：https://hub.docker.com/r/nolanhzy/nvjdc~~***
+- ***原作 ~~[Nolanhzy](#https://github.com/NolanHzy/nvjdcdocker.git)：https://hub.docker.com/r/nolanhzy/nvjdc~~***
 
 - ***备份 clearloves：https://hub.docker.com/r/clearloves/nvjdc***
 
