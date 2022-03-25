@@ -250,7 +250,7 @@ fi
 
 #拉取nvjdc镜像
 echo -e  "${green}开始拉取nvjdc镜像文件，nvjdc镜像比较大，请耐心等待${plain}"
-docker pull nolanhzy/nvjdc:1.1
+docker pull clearloves/nvjdc:1.2
 
 
 #创建并启动nvjdc容器
