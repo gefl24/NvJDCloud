@@ -257,7 +257,7 @@ docker pull clearloves/nvjdc:1.2
 echo -e "${green}开始创建nvjdc容器${plain}"
 docker run   --name nvjdc -p ${jdcport}:80 -d  -v  "$(pwd)"/Config.json:/app/Config/Config.json:ro \
 -v "$(pwd)"/.local-chromium:/app/.local-chromium  \
--it --privileged=true  nolanhzy/nvjdc:1.1
+-it --privileged=true  clearloves/nvjdc:1.2
 docker update --restart=always nvjdc
 
 baseip=$(curl -s ipip.ooo)  > /dev/null
